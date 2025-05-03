@@ -3,7 +3,7 @@
 #![allow(dead_code)]
 use clearscreen::{self};
 
-fn main() {
+fn main() { // why did i keep this
     println!("I feel like you should use other functions.");
 }
 
@@ -52,7 +52,7 @@ pub fn squares(side: f32) -> u8 { // square's area and circumference function
         println!("squares() AREA result: {}", side*side * 4.0);
         println!("squares() CIRCUMFERENCE result: {}", side * 4.0);
         print!("\n");
-        return 0;
+        return 0; // for main.rs to print "why did you set radius than 0"
     }
     else {
         println!("The side length is smaller than 0. Can't proceed.");
